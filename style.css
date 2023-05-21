@@ -1,0 +1,78 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*create the linear gradient colour without it repeating the color*/
+body {
+  background-image: linear-gradient(#339ed6, #3949ab);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* used to create the background of the FAQ and to centre it*/
+.card {
+  margin: auto;
+  margin-top: 170px;
+  background-color: rgb(249, 249, 249);
+  box-shadow: 2px 2px 3px #3671bb;
+  max-width: 390px;
+  max-height: 360px;
+  border-radius: 20px;
+  padding-bottom: 18px;
+}
+/* moves the button to the desired location*/
+.button {
+  display: flex;
+  display: inline-flex;
+  float: right;
+  font-size: 12px;
+  padding-right: 13px;
+  margin-top: -16px;
+}
+/* creates a pointer when hovering on the button*/
+.button :hover {
+  cursor: pointer;
+}
+/* creates a circular background for the button*/
+.button span {
+  border-radius: 50%;
+  background-color: white;
+  width: 16px;
+  height: 16px;
+  border: solid;
+  text-align: center;
+}
+/*moves the title to desired location*/
+.title {
+  padding-left: 19px;
+  padding-top: 20px;
+}
+/*moves the question to desired location*/
+.question {
+  padding-top: 8px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  font-size: clamp(8.6px, 16vw, 8.6px);
+}
+/*moves the answer to desired location also re-sizes it*/
+.answer {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: lightgrey;
+  font-size: clamp(8.6px, 16vw, 8.6px);
+  min-width: 3px;
+}
+
+/*gets rid of the bevel in the hr also re-sizes it*/
+hr {
+  border: none;
+  background-color: #ccc;
+  color: #ccc;
+  height: 1px;
+  margin-top: 6px;
+  width: 354px;
+  margin-left: 20px;
+}
